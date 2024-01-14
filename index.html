@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="left-side">
+        <div class="background-image">
+          <img src="./images/bg-main-desktop.png" alt="" />
+        </div>
+        <div class="card-right">
+          <img src="./images/bg-card-front.png" alt="" />
+          <div class="logo">
+            <img src="./images/card-logo.svg" alt="" />
+          </div>
+          <div class="text-bottom-left">
+            <p id="realName">Gabriel Firea</p>
+          </div>
+          <div class="text-bottom-right">
+            <p id="expireDate">00/00</p>
+          </div>
+          <div class="center-text">
+            <p id="realNumber">0000 0000 0000 0000</p>
+          </div>
+        </div>
+        <div class="card-left">
+          <img src="./images/bg-card-back.png" alt="" />
+          <div class="back-text">
+            <p id="realCvc">321</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="inputs d-flex flex-column">
+          <div class="d-flex flex-column">
+            <label for="name">Cardholder name</label>
+            <input
+              id="cardHolder"
+              type="text"
+              placeholder="Cardholder name"
+              style="width: 340px; height: 35px; margin-bottom: 30px"
+            />
+          </div>
+          <div class="d-flex flex-column">
+            <label for="name">Card number</label>
+            <input
+              id="cardNumber"
+              type="text"
+              placeholder="Cardholder Number"
+              style="width: 340px; height: 35px; margin-bottom: 30px"
+            />
+          </div>
+          <div class="d-flex">
+            <div class="d-flex flex-column">
+              <label for="date">Exp. Date</label>
+              <div class="d-flex">
+                <input
+                  id="inputJs"
+                  type="text"
+                  placeholder="MM"
+                  style="width: 70px; height: 35px; margin-right: 10px"
+                />
+                <input
+                  id="inputJs2"
+                  type="text"
+                  placeholder="YY"
+                  style="width: 70px; height: 35px; margin-right: 10px"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <label for="cvc">CVC</label>
+              <input
+                id="inputJs3"
+                type="text"
+                placeholder="eg. 123"
+                style="width: 200px; height: 35px"
+              />
+            </div>
+          </div>
+          <button
+            onclick="getData()"
+            type="button"
+            class="d-flex btn-primary mt-4"
+            style="
+              border-radius: 8px;
+              text-transform: uppercase;
+              font-family: sans-serif;
+            "
+          >
+            Confirm
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<script src="./script.js"></script>
